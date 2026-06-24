@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  E-MAIL DE CONFIRMAÇÃO DE PAGAMENTO — Souza Neto Advocacia
+  ============================================================================
+  Como usar no Make.com:
+   1. Cenário: Webhook do Asaas  ->  Filtro (event = PAYMENT_CONFIRMED
+      ou PAYMENT_RECEIVED)  ->  módulo de envio de e-mail (Gmail/SMTP).
+   2. No módulo de e-mail, marque "Conteúdo HTML" e cole TODO este arquivo.
+   3. Assunto sugerido:
+        Pagamento confirmado — próximos passos | Souza Neto Advocacia
+   4. Personalização (opcional): troque {{nome}} pelo campo do cliente vindo
+      do Asaas (ex.: payment.customer.name). Se não tiver o nome, apague a
+      linha "Olá, {{nome}}!" — a mensagem continua fazendo sentido.
+
+  Observações técnicas:
+   - Layout em tabelas + estilos inline: máxima compatibilidade com Gmail,
+     Outlook, Apple Mail, etc. (e-mail não suporta flexbox, Google Fonts
+     nem filtros CSS).
+   - Os dois links já estão embutidos nos botões.
+  ============================================================================
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pagamento confirmado — Souza Neto Advocacia</title>
+</head>
+<body style="margin:0; padding:0; background:#eef1f5;">
+
+  <!-- Pré-cabeçalho (texto de preview, oculto) -->
+  <div style="display:none; max-height:0; overflow:hidden; opacity:0; color:#eef1f5; font-size:1px; line-height:1px;">
+    Pagamento confirmado! Veja os próximos passos: envio dos documentos e agendamento da sua reunião.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef1f5;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+
+        <!-- Card -->
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background:#ffffff; border:1px solid #e1e5ea; border-radius:12px; overflow:hidden;">
+
+          <!-- Cabeçalho (azul-marinho + filete dourado) -->
+          <tr>
+            <td align="center" style="background:#0e1c2e; padding:28px 32px; border-bottom:3px solid #c2a26a;">
+              <div style="font-family:Georgia,'Times New Roman',serif; font-size:24px; font-weight:bold; color:#ffffff; letter-spacing:.5px;">
+                Souza Neto Advocacia
+              </div>
+              <div style="font-family:Arial,Helvetica,sans-serif; font-size:11px; color:#c2a26a; letter-spacing:4px; text-transform:uppercase; margin-top:7px;">
+                Contratos sob medida
+              </div>
+            </td>
+          </tr>
+
+          <!-- Corpo -->
+          <tr>
+            <td style="padding:36px 36px 8px;">
+
+              <!-- Selo de confirmação -->
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="background:#eaf3ec; border:1px solid #cfe3d4; color:#2e6b3e; font-family:Arial,Helvetica,sans-serif; font-size:12px; font-weight:bold; letter-spacing:1.5px; text-transform:uppercase; padding:8px 16px; border-radius:999px;">
+                    &#10003;&nbsp; Pagamento confirmado
+                  </td>
+                </tr>
+              </table>
+
+              <h1 style="font-family:Georgia,'Times New Roman',serif; font-weight:bold; color:#0e1c2e; font-size:30px; line-height:1.2; margin:20px 0 0;">
+                Tudo certo com o seu pagamento!
+              </h1>
+
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:16px; line-height:1.65; color:#3a4654; margin:14px 0 0;">
+                Olá, {{nome}}! Recebemos a confirmação do seu pagamento. Agora faltam só
+                <strong>dois passos rápidos</strong> para darmos andamento ao seu contrato.
+              </p>
+
+              <!-- Passo 1 — Documentos -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:28px 0 0; background:#f7f9fb; border:1px solid #e1e5ea; border-radius:10px;">
+                <tr>
+                  <td style="padding:22px 24px;">
+                    <div style="font-family:Arial,Helvetica,sans-serif; font-size:12px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; color:#8a6d2f;">
+                      Passo 1
+                    </div>
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:20px; color:#0e1c2e; margin:4px 0 0;">
+                      Envie seus documentos
+                    </div>
+                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:14.5px; line-height:1.6; color:#4a5563; margin:8px 0 18px;">
+                      Preencha o formulário abaixo com as informações necessárias para a
+                      elaboração do seu contrato.
+                    </p>
+                    <!-- Botão -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" style="background:#c2a26a; border-radius:6px;">
+                          <a href="https://tally.so/r/zxgAgM" target="_blank" style="display:inline-block; font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:bold; color:#0e1c2e; text-decoration:none; padding:13px 28px;">
+                            Enviar documentos &rarr;
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Passo 2 — Agendamento -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:18px 0 0; background:#f7f9fb; border:1px solid #e1e5ea; border-radius:10px;">
+                <tr>
+                  <td style="padding:22px 24px;">
+                    <div style="font-family:Arial,Helvetica,sans-serif; font-size:12px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; color:#8a6d2f;">
+                      Passo 2
+                    </div>
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:20px; color:#0e1c2e; margin:4px 0 0;">
+                      Agende sua reunião
+                    </div>
+                    <p style="font-family:Arial,Helvetica,sans-serif; font-size:14.5px; line-height:1.6; color:#4a5563; margin:8px 0 18px;">
+                      Escolha o melhor horário para conversar com o Dr. Antonio sobre o
+                      seu contrato (reunião de 30 minutos).
+                    </p>
+                    <!-- Botão -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" style="background:#0e1c2e; border-radius:6px;">
+                          <a href="https://cal.read.ai/contratos-sn/30-min" target="_blank" style="display:inline-block; font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:bold; color:#ffffff; text-decoration:none; padding:13px 28px;">
+                            Agendar reunião &rarr;
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Links em texto (fallback / acessibilidade) -->
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:1.7; color:#6a7480; margin:24px 0 0;">
+                Se os botões não funcionarem, copie e cole os endereços no navegador:<br>
+                Documentos: <a href="https://tally.so/r/zxgAgM" style="color:#8a6d2f;">https://tally.so/r/zxgAgM</a><br>
+                Agendamento: <a href="https://cal.read.ai/contratos-sn/30-min" style="color:#8a6d2f;">https://cal.read.ai/contratos-sn/30-min</a>
+              </p>
+
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:1.65; color:#6a7480; margin:22px 0 4px;">
+                Qualquer dúvida, é só responder a este e-mail ou escrever para
+                <a href="mailto:contato@souzanetoadvocacia.com.br" style="color:#8a6d2f;">contato@souzanetoadvocacia.com.br</a>.
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- Rodapé (azul-marinho) -->
+          <tr>
+            <td style="background:#0e1c2e; padding:26px 36px 30px;">
+              <p style="font-family:Arial,Helvetica,sans-serif; font-size:12.5px; line-height:1.7; color:#7e8b9c; margin:0;">
+                Souza Neto Sociedade Individual de Advocacia &middot; CNPJ 35.547.670/0001-07<br>
+                Dr. Antonio Barbosa de Souza Neto &mdash; OAB/MS 22.741<br>
+                <a href="mailto:contato@souzanetoadvocacia.com.br" style="color:#cdd6e1; text-decoration:none;">contato@souzanetoadvocacia.com.br</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /Card -->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
