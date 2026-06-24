@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recebemos a sua solicitação — Souza Neto Advocacia</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="logo.png">
+
+<!-- Fontes (mesmas do site) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#0e1c2e;
+    --navy-2:#15263b;
+    --gold:#c2a26a;
+    --gold-dark:#8a6d2f;
+    --ink:#1c2430;
+    --muted:#5a6675;
+    --line:#e1e5ea;
+    --cream:#faf7f0;
+    --bg:#ffffff;
+    --bg-soft:#f7f9fb;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:#eef1f5;color:var(--ink);
+    font-family:'Inter',Arial,Helvetica,sans-serif;
+    font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;
+    min-height:100vh;display:flex;align-items:center;justify-content:center;
+    padding:32px 16px;
+  }
+  h1{font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-weight:600;line-height:1.15;color:var(--navy);margin:0}
+
+  .card{
+    width:100%;max-width:620px;background:var(--bg);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;
+    box-shadow:0 18px 48px rgba(14,28,46,.12);
+  }
+
+  /* Header — mesma identidade do site */
+  .header{background:var(--navy);padding:26px 32px;text-align:center;border-bottom:3px solid var(--gold)}
+  .header .logo{height:30px;width:auto;margin:0 auto;filter:brightness(0) invert(1)}
+  .header .name{color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:600;letter-spacing:.01em}
+  .header .tag{color:var(--gold);font-size:11px;margin-top:6px;letter-spacing:.32em;text-transform:uppercase}
+
+  .body{padding:38px 36px 8px}
+  .badge{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--cream);border:1px solid #e1d9c6;color:var(--gold-dark);
+    font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    padding:8px 16px;border-radius:999px;
+  }
+  .dots{display:inline-flex;gap:4px}
+  .dots span{width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block;animation:pulse 1.2s infinite ease-in-out}
+  .dots span:nth-child(2){animation-delay:.2s}
+  .dots span:nth-child(3){animation-delay:.4s}
+  @keyframes pulse{0%,80%,100%{opacity:.25}40%{opacity:1}}
+
+  h1{margin:20px 0 0;font-size:38px}
+  p.lead{font-size:16px;line-height:1.65;color:#3a4654;margin:16px 0 0}
+
+  .info{margin:24px 0 0;border:1px solid var(--line);background:var(--bg-soft);border-radius:10px;padding:20px 22px}
+  .info p{margin:0;font-size:14.5px;line-height:1.65;color:#4a5563}
+  .info p+p{margin-top:12px}
+  .info strong{color:var(--navy)}
+
+  .closing{font-size:14px;line-height:1.65;color:#6a7480;margin:24px 0 0}
+  .closing strong{color:var(--ink)}
+
+  /* Footer — navy, como o site */
+  .footer{background:var(--navy);color:#aeb9c7;padding:26px 36px 30px;margin-top:34px;font-size:12.5px;line-height:1.7}
+  .footer p{margin:0}
+  .footer a{color:#cdd6e1;text-decoration:none}
+  .footer a:hover{color:var(--gold)}
+  .footer .legal{color:#7e8b9c}
+
+  @media (max-width:560px){
+    .body{padding:30px 24px 6px}
+    h1{font-size:32px}
+    .header,.footer{padding-left:24px;padding-right:24px}
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="header">
+      <img class="logo" src="logo.png" alt="Souza Neto Advocacia">
+      <div class="tag">Contratos sob medida</div>
+    </div>
+
+    <div class="body">
+      <span class="badge">
+        Processando pagamento
+        <span class="dots"><span></span><span></span><span></span></span>
+      </span>
+
+      <h1>Recebemos a sua solicitação!</h1>
+
+      <p class="lead">
+        Seu pagamento está sendo processado. <strong>Assim que ele for confirmado</strong>,
+        você receberá um e-mail com as orientações dos próximos passos &mdash; o envio dos
+        documentos e o agendamento da sua reunião com o advogado.
+      </p>
+
+      <div class="info">
+        <p>
+          <strong>Quanto tempo leva?</strong> Pagamentos por <strong>cartão</strong> e
+          <strong>Pix</strong> são confirmados em instantes. <strong>Boletos</strong>
+          podem levar de 1 a 3 dias úteis para compensar.
+        </p>
+        <p>
+          Você <strong>não precisa fazer mais nada agora</strong>. Pode fechar esta página
+          com tranquilidade &mdash; as orientações chegarão no e-mail que você informou.
+        </p>
+      </div>
+
+      <p class="closing">
+        Não encontrou nosso e-mail? Confira a caixa de <strong>spam</strong> ou
+        <strong>promoções</strong>. Qualquer dúvida, escreva para
+        <a href="mailto:contato@souzanetoadvocacia.com.br">contato@souzanetoadvocacia.com.br</a>.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p class="legal">
+        Souza Neto Sociedade Individual de Advocacia &middot; CNPJ 35.547.670/0001-07<br>
+        Dr. Antonio Barbosa de Souza Neto &mdash; OAB/MS 22.741<br>
+        <a href="mailto:contato@souzanetoadvocacia.com.br">contato@souzanetoadvocacia.com.br</a>
+      </p>
+    </div>
+  </main>
+</body>
+</html>
