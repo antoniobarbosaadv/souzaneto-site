@@ -90,9 +90,9 @@
   /* Header */
   header{position:sticky;top:0;z-index:50;background:rgba(14,28,46,.97);backdrop-filter:saturate(180%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .brand{display:flex;flex-direction:column;gap:5px;line-height:1;text-decoration:none}
-  .brand .logo{height:27px;width:auto;filter:brightness(0) invert(1)}
-  .brand .sub{font-size:10px;letter-spacing:.34em;color:var(--gold);text-transform:uppercase;padding-left:2px}
+  .brand{display:flex;flex-direction:column;align-items:flex-start;gap:5px;line-height:1;text-decoration:none}
+  .brand .logo{height:26px;width:auto;max-width:none;flex:0 0 auto;filter:brightness(0) invert(1)}
+  .brand .sub{font-size:10px;letter-spacing:.34em;color:#fff;opacity:.82;text-transform:uppercase;padding-left:2px}
   nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;align-items:center}
   nav a{color:#dfe5ec;font-size:14.5px;font-weight:500;letter-spacing:.02em}
   nav a:hover{color:var(--gold)}
@@ -159,8 +159,9 @@
   /* Footer */
   footer{background:var(--navy);color:#aeb9c7;padding:56px 0 30px;font-size:14px}
   footer .f-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:28px}
-  footer .f-brand .logo{height:24px;width:auto;filter:brightness(0) invert(1);display:block;margin-bottom:8px}
-  footer .sub{font-size:10px;letter-spacing:.32em;color:var(--gold);text-transform:uppercase}
+  footer .f-brand{display:inline-flex;flex-direction:column;align-items:flex-start}
+  footer .f-brand .logo{height:23px;width:auto;max-width:none;filter:brightness(0) invert(1);display:block;margin-bottom:8px}
+  footer .sub{font-size:10px;letter-spacing:.32em;color:#fff;opacity:.82;text-transform:uppercase}
   footer a{color:#cdd6e1}
   footer a:hover{color:var(--gold)}
   footer .f-links{display:flex;gap:26px;flex-wrap:wrap}
