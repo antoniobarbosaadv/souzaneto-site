@@ -51,9 +51,18 @@ antes de qualquer publicação.
 
 ---
 
+## Stack recomendado (pós-pesquisa — ver PESQUISA-FERRAMENTAS.md)
+- Geração de conteúdo: skills do Claude Code (base: stevenflanagan1/social-ai-team).
+- Geração de arte: MCP de imagem (base: shinpr/mcp-image — Gemini Nano Banana).
+- Publicação/agendamento: Postiz self-host (FB/IG/TikTok), com staging/aprovação.
+- Voz de vídeo: VibeVoice (confirmar licença comercial).
+- Trava obrigatória: aprovação humana + checagem de conformidade OAB antes de postar.
+
 ## Pendências
-- [ ] Finalizar relatório de pesquisa (repos GitHub + servidores MCP + APIs + OAB).
-- [ ] Confirmar dados do VibeVoice (repo, licença, requisitos).
+- [x] Finalizar relatório de pesquisa → ver PESQUISA-FERRAMENTAS.md.
+- [ ] Confirmar dados do VibeVoice (repo oficial/mirror, licença, requisitos).
 - [ ] Apresentar 3 conceitos de identidade/"rosto".
-- [ ] Montar passo a passo de configuração técnica (Meta + TikTok).
+- [ ] Decidir entre Postiz self-host vs. SaaS (Buffer/Blotato) para publicar.
+- [ ] Montar passo a passo de configuração técnica (Meta Business + App Review; TikTok audit).
 - [ ] Modelos de carrossel/vídeo + CTAs OAB-safe.
+- [ ] Validar interpretação do Provimento 205/2021 com a OAB seccional.
