@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Souza Neto — Direções de Arte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=Spectral:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9ebef;color:#1c2430;font-family:'Inter',sans-serif}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  .top{background:#0e1c2e;color:#fff;padding:44px 0}
+  .top h1{font-family:'Fraunces',serif;font-weight:600;font-size:38px;margin:6px 0 6px}
+  .top p{color:#c8d2de;max-width:64ch;margin:0}
+  .eyebrow{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+  .top .eyebrow{color:#c2a26a}
+  section{padding:40px 0}
+  .dir{display:grid;grid-template-columns:330px 1fr;gap:34px;align-items:center;margin-bottom:14px}
+  .dir.alt{grid-template-columns:1fr 330px}
+  .dir.alt .txt{order:-1}
+  .slide{width:330px;height:412px;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 22px 50px -24px rgba(14,28,46,.65)}
+  .slide .pad{position:absolute;inset:0;padding:32px;display:flex;flex-direction:column}
+  .mark{font-size:11px;letter-spacing:.34em;text-transform:uppercase}
+  .rule{height:3px;border-radius:2px}
+  h2.t{font-family:'Fraunces',serif;font-size:30px;margin:0 0 4px;color:#0e1c2e;font-weight:600}
+  .txt .tag{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#8a6d2f}
+  .txt p{color:#5a6675;font-size:15px;margin:8px 0 0;max-width:52ch}
+  .pal{display:flex;gap:8px;margin-top:14px}
+  .pal span{width:30px;height:30px;border-radius:6px;border:1px solid rgba(0,0,0,.08)}
+  .meta{margin-top:12px;font-size:13px;color:#46505e}
+  .meta b{color:#1c2430}
+
+  /* ---------- A · CERRADO (agro-premium) ---------- */
+  .A{background:linear-gradient(165deg,#1b2a20,#24382b 70%,#2c4233);color:#eef0e8}
+  .A .topo{position:absolute;inset:0;opacity:.22;background:
+     radial-gradient(120% 80% at 30% 120%,transparent 38%,#b59159 38.4%,transparent 39%),
+     radial-gradient(120% 80% at 30% 120%,transparent 48%,#b59159 48.4%,transparent 49%),
+     radial-gradient(120% 80% at 30% 120%,transparent 58%,#b59159 58.4%,transparent 59%),
+     radial-gradient(120% 80% at 30% 120%,transparent 68%,#b59159 68.4%,transparent 69%),
+     radial-gradient(120% 80% at 30% 120%,transparent 78%,#b59159 78.4%,transparent 79%)}
+  .A .mark{color:#cdab73}
+  .A h3{font-family:'Spectral',serif;font-weight:600;font-size:30px;line-height:1.12;margin:14px 0 0;color:#f4f1e8}
+  .A .eyebrow{color:#cdab73;margin-top:auto}
+  .A .rule{width:48px;background:#cdab73}
+
+  /* ---------- B · DOSSIÊ (editorial) ---------- */
+  .B{background:#f1ece1;color:#16140f}
+  .B .num{font-family:'Fraunces',serif;font-weight:700;font-size:120px;line-height:.8;color:#16140f;letter-spacing:-.03em}
+  .B .mark{color:#6e2230}
+  .B .label{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#6e2230;text-transform:uppercase}
+  .B h3{font-family:'Fraunces',serif;font-weight:600;font-size:25px;line-height:1.14;margin:12px 0 0;max-width:16ch}
+  .B .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end}
+  .B .rule{width:100%;height:1.5px;background:#16140f;margin-bottom:14px}
+
+  /* ---------- C · SELO (monograma) ---------- */
+  .C{background:radial-gradient(420px 280px at 50% 26%,#22354c,#0c1622);color:#f0e9df;align-items:center;text-align:center}
+  .C .pad{align-items:center}
+  .C .seal{width:128px;height:128px;border-radius:50%;border:2px solid #c2a26a;display:flex;align-items:center;justify-content:center;position:relative;margin-top:8px}
+  .C .seal::before{content:"";position:absolute;inset:9px;border-radius:50%;border:1px solid rgba(194,162,106,.5)}
+  .C .mono{font-family:'Fraunces',serif;font-weight:600;font-size:52px;color:#d8b87e;letter-spacing:-.04em}
+  .C .ring{position:absolute;width:128px;height:128px}
+  .C h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:23px;letter-spacing:.06em;margin:20px 0 0;color:#f0e9df}
+  .C .eyebrow{color:#c2a26a;margin-top:18px}
+  .C .rule{width:40px;background:#c2a26a;margin:14px auto 0}
+
+  @media(max-width:780px){.dir,.dir.alt{grid-template-columns:1fr;justify-items:center}.dir.alt .txt{order:0}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <div class="eyebrow">Souza Neto Advogados · Exploração de direção de arte</div>
+  <h1>Saindo do "preset": 3 direções mais distintivas</h1>
+  <p>Todas mantêm sobriedade premium e compatibilidade com a OAB e o público empresarial/agro — mas cada uma cria um território visual próprio, reconhecível em 1 segundo. Mockups ilustrativos.</p>
+</div></div>
+
+<section><div class="wrap">
+
+  <!-- A -->
+  <div class="dir">
+    <div class="slide A">
+      <div class="topo"></div>
+      <div class="pad">
+        <div class="mark">Souza Neto · Advogados</div>
+        <div class="eyebrow">Direito do Agronegócio</div>
+        <h3>A terra<br>como ativo<br>jurídico.</h3>
+        <div class="rule" style="margin-top:16px"></div>
+      </div>
+    </div>
+    <div class="txt">
+      <div class="tag">Direção A</div>
+      <h2 class="t">Cerrado — agro premium</h2>
+      <p>Verde profundo + latão + osso, com um traço topográfico fino (as curvas de nível da terra). Ancora a marca no território de MS e no agronegócio, sem clichê de "fazenda". Sóbrio, mas inconfundível e regional.</p>
+      <div class="pal"><span style="background:#1b2a20"></span><span style="background:#24382b"></span><span style="background:#b59159"></span><span style="background:#cdab73"></span><span style="background:#f3efe6"></span></div>
+      <div class="meta"><b>Tipografia:</b> Spectral (serifa) + Inter · <b>Sensação:</b> enraizado, sólido, da região.</div>
+    </div>
+  </div>
+
+  <!-- B -->
+  <div class="dir alt">
+    <div class="txt">
+      <div class="tag">Direção B</div>
+      <h2 class="t">Dossiê — editorial jurídico</h2>
+      <p>Preto-tinta + areia + um vinho discreto, numerais gigantes, rótulos em monoespaçada e muito respiro. Parece um periódico/dossiê de elite — passa rigor técnico e autoridade intelectual (combina com você ser professor e mestre).</p>
+      <div class="pal"><span style="background:#16140f"></span><span style="background:#6e2230"></span><span style="background:#e8e0d2"></span><span style="background:#f1ece1"></span></div>
+      <div class="meta"><b>Tipografia:</b> Fraunces (serifa de alto contraste) + JetBrains Mono · <b>Sensação:</b> intelectual, preciso, premium discreto.</div>
+    </div>
+    <div class="slide B">
+      <div class="pad">
+        <div class="mark">Souza Neto</div>
+        <div class="label" style="margin-top:14px">Nota técnica nº 01 — Governança</div>
+        <div class="num" style="margin-top:6px">01</div>
+        <h3>Holding familiar protege o patrimônio?</h3>
+        <div class="foot">
+          <div class="rule"></div>
+        </div>
+        <div class="label">souzanetoadvocacia.com.br</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C -->
+  <div class="dir">
+    <div class="slide C">
+      <div class="pad">
+        <div class="mark" style="color:#c2a26a">Est. Campo Grande · MS</div>
+        <div class="seal">
+          <span class="mono">SN</span>
+          <svg class="ring" viewBox="0 0 128 128"><defs><path id="cir" d="M64,64 m-50,0 a50,50 0 1,1 100,0 a50,50 0 1,1 -100,0"/></defs><text fill="#c2a26a" font-family="Cormorant Garamond" font-size="9.5" letter-spacing="3.2"><textPath href="#cir" startOffset="2%">· SOUZA NETO ADVOGADOS · SEGURANÇA JURÍDICA ·</textPath></text></svg>
+        </div>
+        <h3>SEGURANÇA<br>JURÍDICA</h3>
+        <div class="eyebrow">Decisões de peso</div>
+        <div class="rule"></div>
+      </div>
+    </div>
+    <div class="txt">
+      <div class="tag">Direção C</div>
+      <h2 class="t">Selo — monograma heráldico</h2>
+      <p>Um <b>brasão/selo "SN"</b> vira a assinatura da marca: emblema circular com o monograma e o nome em volta. Cria um símbolo proprietário (não depende do nome escrito) — ótimo pra avatar, carimbo de vídeo e reconhecimento instantâneo. Marinho + dourado, mas elevado a "casa centenária".</p>
+      <div class="pal"><span style="background:#0c1622"></span><span style="background:#22354c"></span><span style="background:#c2a26a"></span><span style="background:#d8b87e"></span><span style="background:#f0e9df"></span></div>
+      <div class="meta"><b>Tipografia:</b> Fraunces/Cormorant + Inter · <b>Sensação:</b> tradição, instituição, confiança herdada.</div>
+    </div>
+  </div>
+
+</div></section>
+</body>
+</html>
