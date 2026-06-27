@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#eceff3;font-family:'Inter',sans-serif;color:#1c2430}
+  .wrap{max-width:1240px;margin:0 auto;padding:34px 26px}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:#8a6d2f}
+  h1{font-family:'Cormorant Garamond',serif;font-size:38px;color:#0e1c2e;margin:6px 0 4px}
+  .sub{color:#46505e;font-size:15px;max-width:80ch}
+  .legend{display:flex;gap:18px;margin:18px 0 26px;flex-wrap:wrap;font-size:13px;font-weight:600}
+  .legend span{display:flex;align-items:center;gap:7px}
+  .dot{width:12px;height:12px;border-radius:50%}
+  .lane{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .ph{background:#fff;border:1px solid #e1e5ea;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 14px 32px -26px rgba(14,28,46,.5)}
+  .ph .cap{padding:14px 16px;color:#fff}
+  .ph .cap .n{font-family:'Cormorant Garamond',serif;font-size:13px;opacity:.8;letter-spacing:.1em;text-transform:uppercase}
+  .ph .cap h3{font-size:18px;margin:2px 0 0;line-height:1.1}
+  .ph .cap .wk{font-size:11px;opacity:.85;margin-top:3px}
+  .ph .body{padding:14px 16px;font-size:12.5px}
+  .ph .body .t{padding:6px 0 6px 20px;position:relative;border-bottom:1px solid #f0f2f5;line-height:1.35}
+  .ph .body .t:last-child{border:0}
+  .ph .body .t .own{position:absolute;left:0;top:7px;font-size:12px}
+  .c0{background:linear-gradient(135deg,#3a4654,#222c38)}
+  .c1{background:linear-gradient(135deg,#123a4f,#0e1c2e)}
+  .c2{background:linear-gradient(135deg,#1f6f8b,#123a4f)}
+  .c3{background:linear-gradient(135deg,#8a6d2f,#6b5320)}
+  .c4{background:linear-gradient(135deg,#0e1c2e,#1a2f49)}
+
+  .grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:26px}
+  .card{background:#fff;border:1px solid #e1e5ea;border-radius:14px;padding:22px 24px;box-shadow:0 14px 32px -26px rgba(14,28,46,.5)}
+  .card h2{font-family:'Cormorant Garamond',serif;font-size:24px;color:#0e1c2e;margin:0 0 12px}
+  .trig{padding:8px 0;border-bottom:1px solid #f0f2f5;font-size:13.5px}
+  .trig:last-child{border:0}
+  .trig b{color:#0e1c2e}
+  .you li{font-size:14px;padding:7px 0 7px 26px;position:relative;list-style:none;color:#1c2430}
+  .you li::before{content:"▶";position:absolute;left:0;top:8px;color:#c2a26a;font-size:11px}
+  .you{padding:0;margin:0}
+  .grade{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+  .day{background:#f4f7f9;border:1px solid #e1e5ea;border-radius:8px;padding:7px 10px;font-size:11.5px;text-align:center;flex:1;min-width:64px}
+  .day b{display:block;color:#1f6f8b;font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+  .day span{font-size:12px;color:#2c3744}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Souza Neto · Operação de mídias</div>
+  <h1>Roadmap de implantação</h1>
+  <div class="sub">Do zero à operação rodando em ~4 semanas (a auditoria do TikTok corre em paralelo). Depois, o motor semanal mantém a roda girando.</div>
+
+  <div class="legend">
+    <span><span class="dot" style="background:#c2a26a"></span>🧑‍💼 Você</span>
+    <span><span class="dot" style="background:#1f6f8b"></span>🤖 Claude / IA</span>
+    <span><span class="dot" style="background:#2e7d4f"></span>🛠️ Software (Metricool)</span>
+  </div>
+
+  <div class="lane">
+    <div class="ph">
+      <div class="cap c0"><div class="n">Fase 0</div><h3>Fundação</h3><div class="wk">Semana 1</div></div>
+      <div class="body">
+        <div class="t"><span class="own">🧑‍💼</span>Criar/confirmar perfis (premium + direitos)</div>
+        <div class="t"><span class="own">🧑‍💼</span>Contas Business + Meta Suite</div>
+        <div class="t"><span class="own">🧑‍💼</span>Abrir TikTok Business</div>
+        <div class="t"><span class="own">🤖</span>Bios, fotos (logo), links</div>
+      </div>
+    </div>
+    <div class="ph">
+      <div class="cap c1"><div class="n">Fase 1</div><h3>Ferramentas</h3><div class="wk">Semana 1–2</div></div>
+      <div class="body">
+        <div class="t"><span class="own">🧑‍💼</span>Assinar Metricool</div>
+        <div class="t"><span class="own">🧑‍💼</span>Conectar as contas</div>
+        <div class="t"><span class="own">🧑‍💼</span>Iniciar auditoria TikTok</div>
+        <div class="t"><span class="own">🤖</span>Stack de produção + Drive</div>
+      </div>
+    </div>
+    <div class="ph">
+      <div class="cap c2"><div class="n">Fase 2</div><h3>Motor de conteúdo</h3><div class="wk">Semana 2–3</div></div>
+      <div class="body">
+        <div class="t"><span class="own">🤖</span>Templates com a logo</div>
+        <div class="t"><span class="own">🤖</span>Calendário + temas</div>
+        <div class="t"><span class="own">🤖</span>Banco de roteiros (1º lote)</div>
+        <div class="t"><span class="own">🧑‍💼</span>Escolher voz VibeVoice</div>
+      </div>
+    </div>
+    <div class="ph">
+      <div class="cap c3"><div class="n">Fase 3</div><h3>Piloto</h3><div class="wk">Semana 3–4</div></div>
+      <div class="body">
+        <div class="t"><span class="own">🤖</span>Produzir 2 semanas adiantadas</div>
+        <div class="t"><span class="own">🧑‍💼</span>Aprovar o lote</div>
+        <div class="t"><span class="own">🛠️</span>Agendar no Metricool</div>
+        <div class="t"><span class="own">🚀</span>Soft launch</div>
+      </div>
+    </div>
+    <div class="ph">
+      <div class="cap c4"><div class="n">Fase 4</div><h3>Operação &amp; escala</h3><div class="wk">Contínuo</div></div>
+      <div class="body">
+        <div class="t"><span class="own">🔁</span>Gera → aprova → agenda</div>
+        <div class="t"><span class="own">⚙️</span>Gatilhos ativos</div>
+        <div class="t"><span class="own">🤖</span>Métricas mensais</div>
+        <div class="t"><span class="own">♻️</span>Reciclar top performers</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card">
+      <h2>Gatilhos / automações</h2>
+      <div class="trig"><b>Grade fixa por dia</b> — cada dia = um pilar/tese:</div>
+      <div class="grade">
+        <div class="day"><b>Seg</b><span>Golpe Pix</span></div>
+        <div class="day"><b>Ter</b><span>Aux.-acidente</span></div>
+        <div class="day"><b>Qua</b><span>Maternidade</span></div>
+        <div class="day"><b>Qui</b><span>Trabalhista</span></div>
+        <div class="day"><b>Sex</b><span>Contratos</span></div>
+        <div class="day"><b>Sáb</b><span>Premium</span></div>
+      </div>
+      <div class="trig" style="margin-top:10px"><b>Sazonal</b> — 13º, FGTS, safra, datas do INSS.</div>
+      <div class="trig"><b>News-jacking</b> — nova decisão/súmula → vídeo no dia.</div>
+      <div class="trig"><b>Geração em lote</b> — IA monta a semana seguinte toda.</div>
+      <div class="trig"><b>Resposta de lead</b> — 1ª resposta auto + roteamento p/ funil certo.</div>
+      <div class="trig"><b>Reciclagem</b> — melhores conteúdos voltam ao ar reeditados.</div>
+    </div>
+    <div class="card">
+      <h2>O que só você destrava</h2>
+      <ul class="you">
+        <li>Criar/confirmar os perfis e pôr em Business</li>
+        <li>Assinar o Metricool (e o mínimo de produção)</li>
+        <li>Iniciar a auditoria do TikTok (quanto antes)</li>
+        <li>Aprovar a voz e o 1º lote de conteúdo</li>
+      </ul>
+      <div style="margin-top:14px;font-size:13px;color:#46505e;background:#f4f7f9;border:1px solid #e1e5ea;border-radius:10px;padding:12px 14px">
+        Todo o resto — estratégia, templates, roteiros, calendário, configurações e textos — é comigo. 🤖
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
