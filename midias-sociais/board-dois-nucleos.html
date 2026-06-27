@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Souza Neto — Dois Núcleos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9ebef;color:#1c2430;font-family:'Inter',sans-serif}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  .top{background:#0e1c2e;color:#fff;padding:46px 0}
+  .top h1{font-family:'Fraunces',serif;font-weight:600;font-size:38px;margin:6px 0}
+  .top p{color:#c8d2de;max-width:66ch;margin:0}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+  .top .eyebrow{color:#c2a26a}
+  section{padding:42px 0}
+  h2.sec{font-family:'Fraunces',serif;font-size:30px;color:#0e1c2e;margin:6px 0 22px;font-weight:600}
+
+  /* two cores */
+  .cores{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .core{border-radius:16px;overflow:hidden;box-shadow:0 18px 44px -26px rgba(14,28,46,.55)}
+  .core .head{padding:24px 26px;color:#fff}
+  .core .head h3{font-family:'Fraunces',serif;font-size:26px;margin:0 0 2px}
+  .core .head .sub{font-size:13px;opacity:.85}
+  .core .body{background:#fff;padding:22px 26px}
+  .core .body .line{display:flex;gap:10px;font-size:14px;padding:7px 0;border-bottom:1px solid #eef1f4}
+  .core .body .line:last-child{border:0}
+  .core .body .k{font-weight:700;color:#0e1c2e;min-width:96px;font-size:12.5px;letter-spacing:.02em;text-transform:uppercase}
+  .core .body .v{color:#46505e}
+  .h-prem{background:linear-gradient(120deg,#0e1c2e,#1a2f49)}
+  .h-prem .tagp{display:inline-block;margin-top:8px;background:#c2a26a;color:#0e1c2e;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
+  .h-mass{background:linear-gradient(120deg,#123a4f,#1f6f8b)}
+  .h-mass .tagp{display:inline-block;margin-top:8px;background:#e3a93a;color:#13110a;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
+
+  /* massificado identity */
+  .pal{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+  .pal .chip{width:120px;height:80px;border-radius:10px;display:flex;align-items:flex-end;padding:10px;color:#fff;font-size:11.5px;font-weight:600;border:1px solid rgba(0,0,0,.06)}
+
+  /* carousels */
+  .row{display:flex;gap:20px;flex-wrap:wrap}
+  .slide{width:270px;height:338px;border-radius:16px;overflow:hidden;position:relative;box-shadow:0 18px 40px -24px rgba(14,28,46,.6);flex:0 0 auto}
+  .slide .pad{position:absolute;inset:0;padding:24px;display:flex;flex-direction:column}
+  .seal{width:34px;height:34px;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;font-size:15px}
+  .tagcat{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+  .ask{font-family:'Inter',sans-serif;font-weight:800;font-size:26px;line-height:1.16;margin:12px 0 0;letter-spacing:-.01em}
+  .disc{font-size:9.5px;opacity:.72;margin-top:auto}
+  .swipe{font-size:11px;font-weight:700}
+
+  /* massificado slide styles: light, accessible, navy+amber */
+  .m1{background:#f4f7f9;color:#0e1c2e}
+  .m1 .seal,.m1 .tagcat{color:#1f6f8b}
+  .m1 .accent{color:#c77f12}
+  .m1 .swipe{color:#1f6f8b}
+  .m2{background:linear-gradient(160deg,#123a4f,#0e1c2e);color:#fff}
+  .m2 .tagcat{color:#e3a93a}
+  .m2 .seal{color:#e3a93a}
+  .m2 .accent{color:#e3a93a}
+  .m3{background:#fff;color:#0e1c2e;border:1px solid #e1e5ea}
+  .m3 .seal,.m3 .tagcat{color:#1f6f8b}
+  .m3 .accent{color:#c77f12}
+  .m4{background:linear-gradient(160deg,#1f6f8b,#123a4f);color:#fff}
+  .m4 .tagcat,.m4 .seal,.m4 .swipe{color:#ffe0a3}
+  .icon{font-size:30px;margin-top:6px}
+  .cap{font-size:12.5px;color:#5a6675;max-width:60ch;margin:14px 0 0}
+
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:6px}
+  .cc{background:#fff;border:1px solid #e1e5ea;border-radius:12px;padding:18px 20px}
+  .cc h4{margin:0 0 8px;font-family:'Fraunces',serif;font-size:18px;color:#0e1c2e}
+  .cc .ex{font-size:13.5px;color:#46505e;padding:5px 0}
+  .cc .ex b{color:#0e1c2e}
+  @media(max-width:820px){.cores,.compare{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <div class="eyebrow">Souza Neto Advogados · Arquitetura de marca</div>
+  <h1>Dois núcleos, uma só casa</h1>
+  <p>Perfis separados (premium e massificado) com a mesma DNA visual — para que cada público receba a linguagem certa sem que um contamine o outro. Mockups ilustrativos · conteúdo OAB-safe.</p>
+</div></div>
+
+<section><div class="wrap">
+  <div class="eyebrow" style="color:#8a6d2f">01 · Estrutura</div>
+  <h2 class="sec">Os dois perfis</h2>
+  <div class="cores">
+    <div class="core">
+      <div class="head h-prem">
+        <h3>Souza Neto Advogados</h3>
+        <div class="sub">Núcleo Premium · institucional</div>
+        <div class="tagp">Reputação · alto valor</div>
+      </div>
+      <div class="body">
+        <div class="line"><span class="k">Público</span><span class="v">Empresas, agro, famílias patrimonializadas</span></div>
+        <div class="line"><span class="k">Temas</span><span class="v">Contratos, Governança, Compliance, Agro, Tributário</span></div>
+        <div class="line"><span class="k">Tom</span><span class="v">Sóbrio, autoridade discreta, status</span></div>
+        <div class="line"><span class="k">Redes</span><span class="v">Instagram + LinkedIn</span></div>
+        <div class="line"><span class="k">Objetivo</span><span class="v">Poucos leads de altíssimo valor</span></div>
+        <div class="line"><span class="k">Automação</span><span class="v">Mais alta (naturalmente OAB-safe)</span></div>
+      </div>
+    </div>
+    <div class="core">
+      <div class="head h-mass">
+        <h3>Souza Neto | Direitos</h3>
+        <div class="sub">Núcleo Massificado · varejo</div>
+        <div class="tagp">Volume de leads</div>
+      </div>
+      <div class="body">
+        <div class="line"><span class="k">Público</span><span class="v">Trabalhadores, segurados INSS, consumidores</span></div>
+        <div class="line"><span class="k">Teses</span><span class="v">Golpe do Pix, Auxílio-acidente, Maternidade, Trabalhista</span></div>
+        <div class="line"><span class="k">Tom</span><span class="v">Didático, empático, acessível</span></div>
+        <div class="line"><span class="k">Redes</span><span class="v">Instagram + TikTok + Facebook</span></div>
+        <div class="line"><span class="k">Objetivo</span><span class="v">Volume de leads qualificados</span></div>
+        <div class="line"><span class="k">Automação</span><span class="v">Menor · revisão + filtro OAB sempre</span></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section style="background:#fff;border-top:1px solid #e1e5ea;border-bottom:1px solid #e1e5ea"><div class="wrap">
+  <div class="eyebrow" style="color:#8a6d2f">02 · Identidade do massificado</div>
+  <h2 class="sec">Mesma casa, versão acessível</h2>
+  <p class="cap" style="margin-top:0">Mantém o selo e o marinho da marca-mãe, mas entra um <b>azul-confiança</b> + <b>âmbar</b>, muito branco, tipografia grande e títulos em forma de <b>pergunta</b> — para parar o feed e gerar identificação, sem cair no sensacionalismo que a OAB pune.</p>
+  <div class="pal">
+    <div class="chip" style="background:#0e1c2e">Marinho #0e1c2e</div>
+    <div class="chip" style="background:#1f6f8b">Azul-confiança #1f6f8b</div>
+    <div class="chip" style="background:#e3a93a;color:#3a2c08">Âmbar #e3a93a</div>
+    <div class="chip" style="background:#f4f7f9;color:#46505e;border:1px solid #dde3e8">Nuvem #f4f7f9</div>
+    <div class="chip" style="background:#c2a26a;color:#3a2e12">Dourado (elo) #c2a26a</div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow" style="color:#8a6d2f">03 · Aplicação</div>
+  <h2 class="sec">Capas de carrossel — teses do massificado</h2>
+  <div class="row">
+    <div class="slide m1">
+      <div class="pad">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="seal">SN</div><div class="tagcat">Golpe do Pix</div>
+        </div>
+        <div class="icon">📱</div>
+        <div class="ask">Caí num golpe do Pix. <span class="accent">O banco pode ser responsabilizado?</span></div>
+        <div class="disc">Conteúdo informativo. Para o seu caso, consulte um advogado.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><span class="disc" style="opacity:1">@souzaneto.direitos</span><span class="swipe">Arraste →</span></div>
+      </div>
+    </div>
+
+    <div class="slide m2">
+      <div class="pad">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="seal">SN</div><div class="tagcat">INSS · Auxílio-acidente</div>
+        </div>
+        <div class="icon">🦾</div>
+        <div class="ask">Recebi alta do INSS, mas <span class="accent">continuo com dor.</span> E agora?</div>
+        <div class="disc">Conteúdo informativo. Cada caso depende de análise.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><span class="disc" style="opacity:1">@souzaneto.direitos</span><span class="swipe">Arraste →</span></div>
+      </div>
+    </div>
+
+    <div class="slide m3">
+      <div class="pad">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="seal">SN</div><div class="tagcat">INSS · Maternidade</div>
+        </div>
+        <div class="icon">🤱</div>
+        <div class="ask">Quem tem direito ao <span class="accent">salário-maternidade?</span></div>
+        <div style="font-size:12.5px;color:#46505e;margin-top:6px">Inclusive desempregada, rural, MEI e autônoma.</div>
+        <div class="disc">Conteúdo informativo. Para o seu caso, consulte um advogado.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><span class="disc" style="opacity:1">@souzaneto.direitos</span><span class="swipe">Arraste →</span></div>
+      </div>
+    </div>
+
+    <div class="slide m4">
+      <div class="pad">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="seal">SN</div><div class="tagcat">Trabalhista</div>
+        </div>
+        <div class="icon">⚖️</div>
+        <div class="ask">Trabalhei sem carteira assinada. <span class="accent">Tenho direitos?</span></div>
+        <div class="disc">Conteúdo informativo. Cada caso depende de análise.</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><span class="disc" style="opacity:1">@souzaneto.direitos</span><span class="swipe">Arraste →</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="cap"><b>Repare no padrão OAB-safe:</b> título em pergunta (gera identificação, não promete), selo "SN" ligando à casa-mãe, e o aviso fixo <i>"Conteúdo informativo. Para o seu caso, consulte um advogado."</i> Nenhuma promessa, valor ou captação.</p>
+</div></section>
+
+<section style="background:#fff;border-top:1px solid #e1e5ea"><div class="wrap">
+  <div class="eyebrow" style="color:#8a6d2f">04 · Linguagem</div>
+  <h2 class="sec">Premium x Massificado (mesma casa, vozes diferentes)</h2>
+  <div class="compare">
+    <div class="cc">
+      <h4>Premium — institucional</h4>
+      <div class="ex"><b>Capa:</b> "Holding familiar: estrutura, governança e a proteção do patrimônio."</div>
+      <div class="ex"><b>Tom:</b> técnico, sóbrio, sem emoji, autoridade.</div>
+      <div class="ex"><b>CTA:</b> "Conheça nossa atuação em governança."</div>
+    </div>
+    <div class="cc">
+      <h4>Massificado — acessível</h4>
+      <div class="ex"><b>Capa:</b> "Caí num golpe do Pix. O banco pode ser responsabilizado?"</div>
+      <div class="ex"><b>Tom:</b> pergunta, empatia, linguagem do dia a dia, 1 emoji-âncora.</div>
+      <div class="ex"><b>CTA:</b> "Salve este post e mande pra quem precisa."</div>
+    </div>
+  </div>
+</div></section>
+</body>
+</html>
