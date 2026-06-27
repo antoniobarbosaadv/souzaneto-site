@@ -58,6 +58,18 @@ antes de qualquer publicação.
 - Voz de vídeo: VibeVoice (confirmar licença comercial).
 - Trava obrigatória: aprovação humana + checagem de conformidade OAB antes de postar.
 
+## Decisões travadas (2026-06-27 — cliente delegou a direção ao Claude)
+- **Premium — direção de arte:** C (Selo/monograma heráldico "SN") + lógica editorial
+  (Dossiê) nos carrosséis. Marinho + dourado.
+- **Massificado — nome:** "Souza Neto Direitos".
+- **Massificado — identidade:** azul-confiança (#1f6f8b) + âmbar (#e3a93a) + marinho +
+  muito branco; títulos em pergunta; selo SN ligando à casa-mãe.
+- **Estrutura:** dois perfis separados (premium institucional + massificado varejo).
+
+## Pendência externa
+- [ ] Entender `contrato.souzanetoadvocacia.com.br` (não acessível pelo ambiente —
+  bloqueio de rede). Cliente vai descrever. Provável destino de lead / onboarding.
+
 ## Pendências
 - [x] Finalizar relatório de pesquisa → ver PESQUISA-FERRAMENTAS.md.
 - [ ] Confirmar dados do VibeVoice (repo oficial/mirror, licença, requisitos).
