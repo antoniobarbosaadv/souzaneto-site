@@ -59,8 +59,12 @@ antes de qualquer publicação.
 - Trava obrigatória: aprovação humana + checagem de conformidade OAB antes de postar.
 
 ## Decisões travadas (2026-06-27 — cliente delegou a direção ao Claude)
-- **Premium — direção de arte:** C (Selo/monograma heráldico "SN") + lógica editorial
-  (Dossiê) nos carrosséis. Marinho + dourado.
+- **LOGO (definitivo):** manter o wordmark existente "SOUZA NETO ADVOGADOS" — o cliente
+  gosta e quer continuar usando. É a marca oficial em TUDO. NÃO criar selo/monograma novo.
+  (O "SN" que apareceu em mockups é placeholder e será trocado pela logo real.)
+  Avatar redondo: usar versão compacta da PRÓPRIA logo, só se necessário.
+- **Premium — direção de arte:** lógica editorial (Dossiê) nos carrosséis + a logo
+  existente. Marinho + dourado. (Selo heráldico DESCARTADO.)
 - **Massificado — nome:** "Souza Neto Direitos".
 - **Massificado — identidade:** azul-confiança (#1f6f8b) + âmbar (#e3a93a) + marinho +
   muito branco; títulos em pergunta; selo SN ligando à casa-mãe.
