@@ -4,9 +4,15 @@
 > Legenda de responsável: 🧑‍💼 Cliente (você) · 🤖 Claude/IA · 🛠️ Software (SaaS)
 > Data: 2026-06-27.
 
-## Visão geral (4 semanas até o soft launch; depois operação contínua)
-FASE 0 Fundação → FASE 1 Ferramentas → FASE 2 Motor de conteúdo →
-FASE 3 Piloto/Soft launch → FASE 4 Operação & escala.
+## Visão geral (~1 dia / ~12h até o soft launch; depois operação contínua)
+> Cliente é acelerado → medimos em HORAS. Com Metricool (parceiro aprovado da Meta/TikTok)
+> NÃO há auditoria própria de API — conectar leva minutos.
+Bloco 1 Fundação (0–2h) → Bloco 2 Ferramentas (2–4h) → Bloco 3 Motor de conteúdo (4–8h) →
+Bloco 4 Piloto/Soft launch (8–12h) → Bloco 5 Operação & escala (no ar).
+
+## Perfis (confirmado)
+- Premium/Estratégico: **@souzaneto.law** (Instagram, já existe) + equivalente no Facebook. Sem TikTok.
+- Massificado: criar **Instagram novo** (sugestão @souzaneto.direitos) + **TikTok novo** (só massificado).
 
 ---
 

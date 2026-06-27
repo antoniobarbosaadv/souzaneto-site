@@ -69,6 +69,13 @@ antes de qualquer publicação.
 - **Massificado — identidade:** azul-confiança (#1f6f8b) + âmbar (#e3a93a) + marinho +
   muito branco; títulos em pergunta; selo SN ligando à casa-mãe.
 - **Estrutura:** dois perfis separados (premium institucional + massificado varejo).
+- **Perfis (confirmado pelo cliente):**
+  - Premium/Estratégico: `@souzaneto.law` (Instagram JÁ EXISTE) + equivalente no Facebook.
+    SEM TikTok.
+  - Massificado: criar Instagram novo (sugestão `@souzaneto.direitos`) + TikTok novo
+    (só massificado).
+- **Ritmo:** cliente é acelerado → cronograma em HORAS, não semanas. Com Metricool (SaaS
+  parceiro aprovado) não precisa de auditoria própria de Meta/TikTok; conexão em minutos.
 
 ## Pendência externa
 - [ ] Entender `contrato.souzanetoadvocacia.com.br` (não acessível pelo ambiente —
