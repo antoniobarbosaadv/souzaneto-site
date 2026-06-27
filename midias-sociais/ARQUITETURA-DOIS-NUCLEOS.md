@@ -48,6 +48,32 @@ cheiro" do massificado.
 
 ---
 
+## VERTICAL 3 — CONTRATOS (produtizado) — JÁ EXISTE
+- **Ativo:** funil pronto em `contrato.souzanetoadvocacia.com.br` (landing + checkout
+  + WhatsApp). Produto: contrato sob medida por advogado, online, 24h, R$ 989 / 10x.
+- **Identidade:** premium já deployada (marinho + dourado + Cormorant) + rosto e vídeo
+  do Dr. Antônio. → o sistema premium das redes deve casar EXATAMENTE com isso.
+- **Faz ponte:** arrendamento/parceria rural e empresarial (premium) + locação e
+  compra-e-venda (varejo). Pode ser pilar tanto do perfil premium quanto do massificado.
+- **Tipos:** compra e venda (imóvel/veículo), locação, prestação de serviços, permuta,
+  mútuo, parceria comercial, arrendamento e parceria rural, comodato, cessão de direitos,
+  obra/reforma, franquia, empréstimo entre particulares.
+- **Conteúdo:** carrosséis "o que todo contrato de X precisa ter" → CTA pro funil.
+- **⚠️ OAB:** o funil exibe preço (R$ 989). Divulgação de honorários/preços é ponto
+  sensível. Recomendação: NÃO estampar valor nos posts; educar e levar ao funil (preço
+  aparece lá). Validar com a seccional.
+
+## Roteamento de CTA (destino do lead por território)
+- **Premium institucional** → "fale com o escritório" / agenda de conversa.
+- **Massificado (INSS/consumidor/trabalhista)** → WhatsApp / captura de lead.
+- **Contratos** → funil `contrato.souzanetoadvocacia.com.br` ("Contratar agora").
+
+## Nota de identidade (coerência com o que já existe)
+Marca primária = wordmark "SOUZA NETO ADVOGADOS" (serifa fina) — já usada no site e no
+funil. O **selo/monograma "SN"** (direção premium escolhida) entra como marca SECUNDÁRIA
+(avatar, carimbo de vídeo, ícone), sem substituir o wordmark — assim o social fica
+coerente com o site e o funil já no ar.
+
 ## Pilares de conteúdo do MASSIFICADO (por tese)
 
 ### Golpe do Pix (Consumidor)
