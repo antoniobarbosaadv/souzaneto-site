@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#eceff3;font-family:'Inter',sans-serif;color:#1c2430}
+  .wrap{max-width:1300px;margin:0 auto;padding:34px 26px}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:#8a6d2f}
+  h1{font-family:'Cormorant Garamond',serif;font-size:38px;color:#0e1c2e;margin:6px 0 4px}
+  .sub{color:#46505e;font-size:15px;max-width:90ch}
+  .legend{display:flex;gap:16px;margin:16px 0 24px;flex-wrap:wrap;font-size:13px;font-weight:600;color:#2c3744}
+  .week{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+  .day{background:#fff;border:1px solid #e1e5ea;border-radius:13px;overflow:hidden;display:flex;flex-direction:column;min-height:300px;box-shadow:0 12px 30px -26px rgba(14,28,46,.5)}
+  .day .h{padding:11px 13px;color:#fff;font-weight:800}
+  .day .h .dow{font-size:13px;letter-spacing:.05em}
+  .day .h .tese{font-size:11px;opacity:.9;font-weight:600;margin-top:1px}
+  .day .b{padding:12px 13px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .fmt{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.04em;padding:3px 8px;border-radius:20px;align-self:flex-start}
+  .theme{font-size:13.5px;line-height:1.32;font-weight:600;color:#1c2430}
+  .chan{margin-top:auto;font-size:10.5px;color:#7a8694;font-weight:600;letter-spacing:.02em}
+  /* territory colors */
+  .pix{background:#123a4f}.acc{background:#1f6f8b}.mat{background:#15506b}.tra{background:#0e3344}
+  .con{background:#8a6d2f}.pre{background:#0e1c2e}.dom{background:#5a6675}
+  .f-video{background:#e7f0f4;color:#155}
+  .f-talk{background:#fde8d3;color:#8a4b12}
+  .f-carr{background:#ede7d6;color:#6b5320}
+  .f-prem{background:#e6e9ef;color:#27364a}
+  .f-leve{background:#eef1f4;color:#5a6675}
+  .note{margin-top:22px;background:#fff;border:1px solid #e1e5ea;border-radius:13px;padding:18px 22px;font-size:13.5px;color:#46505e}
+  .note b{color:#0e1c2e}
+  .rotate{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+  .rb{background:#f4f7f9;border:1px solid #e1e5ea;border-radius:9px;padding:8px 12px;font-size:12px}
+  .rb b{display:block;color:#1f6f8b;font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Souza Neto · Calendário editorial</div>
+  <h1>Semana 1 — grade que vira o motor</h1>
+  <div class="sub">Cada dia tem uma tese fixa e um formato base. Esse padrão se repete por 4 semanas, sempre com ângulos novos. Vídeo é o carro-chefe; carrossel é apoio. Tudo informativo, com aprovação humana.</div>
+  <div class="legend">
+    <span>🎬 vídeo faceless</span><span>🎤 talking-head (advogado real)</span><span>🖼️ carrossel</span><span>💼 premium</span>
+  </div>
+
+  <div class="week">
+    <div class="day">
+      <div class="h pix"><div class="dow">SEG</div><div class="tese">Golpe do Pix</div></div>
+      <div class="b">
+        <span class="fmt f-video">🎬 FACELESS</span>
+        <div class="theme">"Caí num golpe do Pix. O banco pode ser responsabilizado?"</div>
+        <div class="chan">Direitos · IG + TikTok</div>
+      </div>
+    </div>
+    <div class="day">
+      <div class="h acc"><div class="dow">TER</div><div class="tese">Auxílio-acidente</div></div>
+      <div class="b">
+        <span class="fmt f-video">🎬 FACELESS</span>
+        <div class="theme">"Recebi alta do INSS, mas continuo com dor. E agora?"</div>
+        <div class="chan">Direitos · IG + TikTok</div>
+      </div>
+    </div>
+    <div class="day">
+      <div class="h mat"><div class="dow">QUA</div><div class="tese">Maternidade</div></div>
+      <div class="b">
+        <span class="fmt f-video">🎬 FACELESS</span>
+        <div class="theme">"Quem tem direito ao salário-maternidade? (rural, MEI, desempregada)"</div>
+        <div class="chan">Direitos · IG + TikTok</div>
+      </div>
+    </div>
+    <div class="day">
+      <div class="h tra"><div class="dow">QUI</div><div class="tese">Trabalhista</div></div>
+      <div class="b">
+        <span class="fmt f-talk">🎤 TALKING-HEAD</span>
+        <div class="theme">"Trabalhei sem carteira assinada. Tenho direitos?"</div>
+        <div class="chan">Direitos · advogado real</div>
+      </div>
+    </div>
+    <div class="day">
+      <div class="h con"><div class="dow">SEX</div><div class="tese">Contratos</div></div>
+      <div class="b">
+        <span class="fmt f-video">🎬 + 🖼️</span>
+        <div class="theme">"Comprou um imóvel? 4 cláusulas que protegem você." → funil</div>
+        <div class="chan">Direitos + cruza Premium</div>
+      </div>
+    </div>
+    <div class="day">
+      <div class="h pre"><div class="dow">SÁB</div><div class="tese">Premium</div></div>
+      <div class="b">
+        <span class="fmt f-prem">💼 INSIGHT</span>
+        <div class="theme">"Holding familiar: o que é e quando faz sentido."</div>
+        <div class="chan">@souzaneto.law · IG/LinkedIn</div>
+      </div>
+    </div>
+    <div class="day">
+      <div class="h dom"><div class="dow">DOM</div><div class="tese">Leve / reaproveita</div></div>
+      <div class="b">
+        <span class="fmt f-leve">🖼️ CITAÇÃO</span>
+        <div class="theme">"Mais do que resolver problemas, atuamos para preveni-los."</div>
+        <div class="chan">ambos</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Como as 4 semanas evoluem (mesma grade, ângulos diferentes):</b>
+    <div class="rotate">
+      <div class="rb"><b>Semana 1</b>Os direitos que você não sabe que tem</div>
+      <div class="rb"><b>Semana 2</b>Como funciona na prática</div>
+      <div class="rb"><b>Semana 3</b>Mitos e erros comuns</div>
+      <div class="rb"><b>Semana 4</b>Primeiros passos / o que fazer</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
