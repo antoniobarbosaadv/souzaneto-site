@@ -3,6 +3,13 @@
 > Formato: narração VibeVoice + texto na tela + b-roll + legendas. Massificado.
 > Estrutura: Gancho (0-3s) → Virada → Prova → CTA OAB-safe. Tudo informativo.
 > Aprovação humana antes de publicar. Data: 2026-06-27.
+>
+> ⚠️ REVISÃO JURÍDICA OBRIGATÓRIA: todo roteiro é revisado por advogado(a) do escritório
+> (Dra. Larissa) ANTES de gerar o vídeo e de postar. Erro factual em conteúdo jurídico é grave.
+> CORREÇÃO 2026-06-27 (apontada pela Dra. Larissa): auxílio-acidente NÃO cabe a autônomo, MEI
+> nem contribuinte individual (Lei 8.213/91, art. 18, §1º). Só: empregado (CLT), doméstico,
+> trabalhador avulso e segurado especial (rural) — com qualidade de segurado. (Isso é o
+> OPOSTO do salário-maternidade, onde autônoma/MEI/individual TÊM direito — não confundir.)
 
 ---
 
@@ -20,10 +27,12 @@
 
 ## 2. Auxílio-acidente — "Recebi alta mas continuo com dor"
 - **Gancho:** "Recebeu alta do INSS e ainda sente dor? Presta atenção."
-- **Narração:** "Existe um benefício chamado auxílio-acidente: uma indenização mensal pra
-  quem ficou com uma sequela permanente — mesmo pequena — depois de um acidente ou doença do
-  trabalho. E ele se acumula com o salário."
-- **Texto na tela:** "Sequela permanente = pode haver direito."
+- **Narração:** "Existe o auxílio-acidente: uma indenização mensal pra quem ficou com uma
+  sequela permanente — mesmo pequena — depois de um acidente ou doença ligada ao trabalho, e
+  que se acumula com o salário. Mas atenção: ele é pra quem é registrado (CLT), doméstico,
+  trabalhador avulso ou segurado especial do campo. Autônomo, MEI e contribuinte individual
+  NÃO têm direito a esse benefício. Cada caso depende de análise."
+- **Texto na tela:** "Vale p/ CLT, doméstico, avulso e rural. (Autônomo/MEI não têm)"
 - **B-roll:** pessoa esfregando punho/ombro, ambiente de trabalho.
 - **CTA:** "Dúvida sobre a sua situação? Link na bio."
 - **Legenda:** Alta do INSS não é o fim da história. Entenda o auxílio-acidente. #INSS
@@ -66,8 +75,10 @@
 - **Gancho:** "Auxílio-doença e auxílio-acidente NÃO são a mesma coisa."
 - **Narração:** "O auxílio-doença é pago enquanto você está incapaz de trabalhar. Já o
   auxílio-acidente é uma indenização pela sequela que ficou — e pode ser recebido junto com o
-  salário, depois da alta. São coisas diferentes."
-- **Texto na tela:** "Doença = durante. Acidente = sequela que ficou."
+  salário, depois da alta. São coisas diferentes. Lembrando: o auxílio-acidente é só pra
+  registrado, doméstico, avulso e segurado especial — autônomo, MEI e contribuinte individual
+  não têm. Cada caso depende de análise."
+- **Texto na tela:** "Doença = durante. Acidente = sequela. (Acidente: não vale p/ autônomo/MEI)"
 - **B-roll:** dois cards comparativos, calendário, contracheque.
 - **CTA:** "Ficou com dúvida? Link na bio."
 - **Legenda:** A diferença que muita gente não sabe — e que pode valer um benefício. #INSS

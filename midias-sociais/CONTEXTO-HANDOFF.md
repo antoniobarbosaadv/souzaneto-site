@@ -55,6 +55,11 @@ executar.
   Metricool) — só guia, opera o Google do cliente, e constrói a automação. Login/pagamento/2FA
   = sempre o cliente.
 - Filosofia: SHIPPAR rápido primeiro, automatizar depois (com lastro de resultado).
+- ⚠️ PRECISÃO JURÍDICA: TODO roteiro passa por revisão de advogado(a) do escritório
+  (Dra. Larissa) ANTES de gerar o vídeo. Erro factual em conteúdo jurídico é grave.
+  CORREÇÃO já aplicada (27/06): auxílio-acidente só cabe a empregado (CLT), doméstico,
+  avulso e segurado especial — NÃO a autônomo/MEI/contribuinte individual (Lei 8.213/91,
+  art. 18 §1º). Salário-maternidade é o oposto (autônoma/MEI TÊM direito). Não confundir.
 
 ## O que estamos fazendo AGORA
 Refinando o "Look" da Lívia no HeyGen: ajustando enquadramento (de close → plano médio

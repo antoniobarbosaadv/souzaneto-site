@@ -89,6 +89,9 @@ coerente com o site e o funil já no ar.
 ### Auxílio-acidente (Previdenciário)
 - **Leigo:** indenização mensal do INSS pra quem ficou com sequela permanente (mesmo
   pequena) depois de acidente/doença do trabalho; acumula com salário.
+- ⚠️ **ELEGIBILIDADE (crítico):** só empregado (CLT), doméstico, avulso e segurado especial
+  (rural), com qualidade de segurado. **NÃO** cabe a autônomo, MEI nem contribuinte individual
+  (Lei 8.213/91, art. 18, §1º). NÃO confundir com salário-maternidade (lá autônoma/MEI TÊM).
 - **Cliente:** trabalhador braçal/esforço repetitivo (LER/DORT) que teve alta mas
   segue com dor/limitação.
 - **Ganchos informativos:** auxílio-acidente x auxílio-doença; "recebi alta mas
@@ -127,5 +130,10 @@ E DEVE conter: caráter informativo/educativo + (quando couber) aviso "Conteúdo
 informativo. Para o seu caso, consulte um advogado."
 
 ## Fluxo (igual aos dois núcleos)
-IA gera roteiro+arte+voz → **advogado aprova + roda o filtro OAB** → publica/agenda.
+IA gera roteiro → **REVISÃO DE PRECISÃO JURÍDICA por advogado(a) (Dra. Larissa)** →
+gera arte/vídeo/voz → **advogado aprova + roda o filtro OAB** → publica/agenda.
 Massificado = revisão mais rígida; Premium = revisão mais leve.
+
+> ⚠️ ETAPA OBRIGATÓRIA: a revisão jurídica vem ANTES de gerar o vídeo (não adianta corrigir
+> depois de produzido). Checar elegibilidade, requisitos e regras específicas de cada tese.
+> Caso real (27/06): erro de elegibilidade do auxílio-acidente pego pela Dra. Larissa.
